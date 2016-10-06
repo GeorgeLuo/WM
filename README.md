@@ -54,7 +54,7 @@ should return,
   "emptySeats": 50
 }
 ```
-initially (the empty VenueService constructor allocateds 50 seats with an expiration time of 5 seconds). 
+initially (the empty VenueService constructor allocates 50 seats with an expiration time of 5 seconds). 
 
 A POST request to the same endpoint should include a parameter (numSeats) to hold the number of seats to hold.
 
