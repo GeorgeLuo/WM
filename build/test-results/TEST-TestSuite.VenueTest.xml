@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSuite.VenueTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2016-10-06T19:15:40" hostname="George" time="26.185">
+  <properties/>
+  <testcase name="test_basicReserve" classname="TestSuite.VenueTest" time="5.16"/>
+  <testcase name="test_multipleHolds" classname="TestSuite.VenueTest" time="0.001"/>
+  <testcase name="test_multipleHoldsWithExpiration" classname="TestSuite.VenueTest" time="5.001"/>
+  <testcase name="test_multipleSeatBlockGroup" classname="TestSuite.VenueTest" time="5.002"/>
+  <testcase name="test_initializeVenue" classname="TestSuite.VenueTest" time="3.0"/>
+  <testcase name="test_multipleReserves" classname="TestSuite.VenueTest" time="3.0"/>
+  <testcase name="test_findSeats" classname="TestSuite.VenueTest" time="0.0"/>
+  <testcase name="test_expiration" classname="TestSuite.VenueTest" time="5.006"/>
+  <testcase name="test_basicHold" classname="TestSuite.VenueTest" time="0.001"/>
+  <testcase name="test_fullHouse" classname="TestSuite.VenueTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

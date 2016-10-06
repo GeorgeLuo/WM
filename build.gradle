@@ -1,0 +1,72 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+    	classpath("org.hibernate:hibernate-core:5.2.3.Final")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.1.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+
+mainClassName = 'WalmartHW.Application'
+
+test {
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/main/java'
+        }
+    }
+    
+    test {
+        java {
+            srcDir 'src/test/java'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+// tag::repositories[]
+
+// end::repositories[]
+
+// tag::jar[]
+jar {
+    baseName = 'gs-gradle'
+    version =  '0.1.0'
+}
+// end::jar[]
+
+// tag::dependencies[]
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+	// https://mvnrepository.com/artifact/junit/junit
+	compile group: 'junit', name: 'junit', version: '4.4'
+	// https://mvnrepository.com/artifact/org.eclipse.persistence/javax.persistence
+	compile group: 'org.eclipse.persistence', name: 'javax.persistence', version: '2.0.0'
+	// https://mvnrepository.com/artifact/org.hibernate/hibernate-core
+	// https://mvnrepository.com/artifact/org.springframework/spring-tx
+	compile group: 'org.springframework', name: 'spring-tx', version: '4.3.3.RELEASE'
+    compile("com.h2database:h2")
+    // https://mvnrepository.com/artifact/org.springframework/spring-orm
+	compile group: 'org.springframework', name: 'spring-orm', version: '3.1.1.RELEASE'
+    compile("org.springframework.boot:spring-boot-starter-web")
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile "junit:junit:4.4"
+}
