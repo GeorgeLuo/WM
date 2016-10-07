@@ -114,5 +114,11 @@ which returns (if the hold has yet to expire),
 
 Notice the startTime is now a negative value. This denotes a reservation has been made for the group.
 
+## Testing
+Run
+```
+gradle cleanTest test
+```
+to run a series of JUnit tests for VenueService functions.
 ## Considerations
 There is no mechanism to cancel reservations or holds manually, this is best for a system with a no refund policy.
